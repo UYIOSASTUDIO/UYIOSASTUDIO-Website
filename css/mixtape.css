@@ -1,0 +1,95 @@
+@import url(https://db.onlinewebfonts.com/c/55d433372d270829c51e2577a78ef12d?family=Monument+Extended+Bold);
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+	height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	margin-bottom: 100px;
+}
+
+.img {
+    width: 500px;
+    height: 500px;
+    perspective: 300px;
+    box-shadow: 10px 10px 5px rgba(7, 7, 7, 0.5);
+}
+
+.img-wrapper {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    background: black;
+    overflow: hidden;
+    box-shadow: 4px 4px 24px rgba(0, 0, 0, 0.3);
+    transform-style: preserve-3d;
+}
+
+.img-inner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.img-holder {
+    transform: scale(1.6);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-title-mixtape {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: exclusion;
+	margin-top: -40px;
+}
+
+.title-mixtape h1 {
+    font-family: "Monument Extended Bold";
+    color: transparent;
+    font-size: 36px;
+    letter-spacing: 12px;
+    -webkit-text-stroke: 2px white;
+    text-transform: uppercase;
+}
+
+@media (max-width: 2003px) {
+	.hero-title-mixtape  {
+		text-align: center;
+		margin-left: 6px;
+	}
+}
+
+@media (max-width: 1014px) {
+	.hero-title-mixtape  {
+		text-align: center;
+		margin-left: 6px;
+		margin-top: 20px;
+	}
+}
+
+@font-face {
+    font-family: "Monument Extended Bold";
+    src: url("https://db.onlinewebfonts.com/t/55d433372d270829c51e2577a78ef12d.eot");
+    src: url("https://db.onlinewebfonts.com/t/55d433372d270829c51e2577a78ef12d.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/55d433372d270829c51e2577a78ef12d.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/55d433372d270829c51e2577a78ef12d.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/55d433372d270829c51e2577a78ef12d.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/55d433372d270829c51e2577a78ef12d.svg#Monument Extended Bold")format("svg");
+}
